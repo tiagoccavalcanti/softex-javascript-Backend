@@ -1,0 +1,240 @@
+lista de exercícios - resposta
+
+//--> Soma dois numeros inteiros
+const prompt = require('prompt-sync')({sigint: true})
+
+var n1 = parseInt(prompt('digite o primeiro numero para ser somado: '));
+var n2 = parseInt(prompt('digite o segundo numero para ser somado: '));
+console.log(`A soma dos números digitados é ${n1+n2}`);
+
+//--> subtrai dois numeros inteiros
+const prompt = require('prompt-sync')({sigint: true})
+
+var n1 = parseInt(prompt('digite o primeiro numero para ser 0 minuendo: '));
+var n2 = parseInt(prompt('digite o segundo numero para ser subtraendo: '));
+console.log(`A subtração dos números digitados é ${n1-n2}`);
+
+//--> multiplica dois numeros inteiros
+const prompt = require('prompt-sync')({sigint: true})
+
+var n1 = parseInt(prompt('digite o primeiro numero para ser multiplicado: '));
+var n2 = parseInt(prompt('digite o segundo numero para ser multiplicado pelo primeiro: '));
+console.log(`A multiplicação dos números digitados é ${n1*n2}`);
+
+//--> divide dois numeros inteiros
+const prompt = require('prompt-sync')({sigint: true})
+
+var n1 = parseInt(prompt('digite o primeiro numero para ser o dividendo: '));
+var n2 = parseInt(prompt('digite o segundo numero para ser o divisor: '));
+console.log(`A divisçao dos números digitados é ${n1/n2}`);
+
+//--> divide dois numeros inteiros e mostra o resto da divisão
+const prompt = require('prompt-sync')({sigint: true})
+
+var n1 = parseInt(prompt('digite o primeiro numero para ser o dividendo: '));
+var n2 = parseInt(prompt('digite o segundo numero para ser o divisor: '));
+console.log(`o resto da sivisão é: ${n1%n2}`);
+
+//--> Soma dois numeros reais
+const prompt = require('prompt-sync')({sigint: true})
+
+var n1 = Number(prompt('digite o primeiro numero para ser somado: '));
+var n2 = Number(prompt('digite o segundo numero para ser somado: '))
+
+
+console.log(`A soma dos números digitados é ${parseFloat(n1+n2)}`);
+
+//-->converte uma temperatura informada em celciius para fahrenheit
+const prompt = require('prompt-sync')({sigint: true});
+
+var c = Number(prompt('digite uma temperatura em celcius para ser convertida: '));
+
+console.log(`a temperatura equivalente, em Fahrenheit é: ${(9*c+160)/5}`);
+
+//-->Le um numero e informa se ele e par ou impar
+const prompt = require('prompt-sync')({sigint: true});
+
+var num = Number(prompt('digite um numero para sabermos se eh par ou impar: '));
+
+if(num % 2 == 0){
+    console.log(`o numero ${num}, é par`);
+}else{
+    console.log(`o numero ${num}, é impar`);
+}
+
+//-->determina se chegou na maioridade ou nao e fala quanto anos ainda faltam (para chegar)
+const prompt = require('prompt-sync')({sigint: true});
+
+var idade = Number(prompt('diga quantos anos você tem, e direi se ja eh uma adulto: '));
+
+if(idade >= 18){
+    console.log(`Parabéns meus mano! Ja está com ${idade} anos, ja é maior de idade.`);
+}else{
+    console.log(`Que pena irmao, ainda faltam ${18 - idade} anos pra maioridade.`)
+}
+
+//--> le dois numeros e fala qual o maior dos dois
+
+const prompt = require('prompt-sync')({sinint: true});
+
+var n1 = Number(prompt('escreva um numero para ser comparado :'));
+var n2 = Number(prompt('escreva o segundo numero para ser comparado: '));
+
+if(n1 > n2){
+    console.log(`${n1} é maior que ${n2}`);
+}else if(n2 > n1){
+    console.log(`${n2} é maior que ${n1}`)
+}else{
+    console.log(`os numeros ${n1} e ${n2} sao iguais`)
+}
+
+
+//-->recebe altura e peso e fala se o peso esta ideal e qual é o seu imc
+const prompt = require('prompt-sync')({sigint: true});
+
+var peso = Number(prompt('Por favor, informe o seu peso para que possamos calcular o IMC: '));
+var altura = Number(prompt('Agora informe sua altura em cm: '))
+
+var imc = (peso/(altura * altura)) * 10000 
+
+    if(imc<=18.5){
+        console.log(`seu imc é ${imc}, isso significa que você esta abaixo do seu peso ideal`)
+    }else if(imc >18.5 && imc<25){
+        console.log(`seu imc é ${imc}, isso significa que você esta no seu peso ideal`)
+    }else{
+        console.log(`seu imc é ${imc}, isso significa que você esta acima do seu peso ideal`)
+
+ }
+
+
+//-->Elabore um programa que leia uma letra e informe se esta letra é uma vogal ou uma consoante.
+const prompt = require('prompt-sync')({sigint: true});
+
+// var letra = prompt('escreva uma letra e diremos se é vogal ou consoante');
+
+vogal_consoante();
+
+function vogal_consoante(){
+
+    var letra = prompt('escreva uma letra e diremos se é vogal ou consoante');
+
+    switch(letra){
+        case 'a':
+            console.log(`${letra} é uma vogal`);
+            break
+
+        case 'e':
+            console.log(`${letra} é uma vogal`);
+            break
+
+        case 'i':
+            console.log(`${letra} é uma vogal`);
+            break
+
+        case 'o':
+            console.log(`${letra} é uma vogal`);
+            break
+
+        case 'u':
+            console.log(`${letra} é uma vogal`);
+            break
+
+        default :
+            console.log(`${letra} é uma consoante`);
+            break
+    }
+    vogal_consoante();
+}
+
+
+// -->Considerando que o ano possui 12 meses, leia um número inteiro entre 1 e 12 e, com o uso da estrutura de controle escolha/caso, informe o nome do mês que corresponde a este número.
+const prompt = require('prompt-sync')({sigint: true});
+
+var num = Number(prompt('Escreva um numero e falaremos o mes correspondente: '))
+
+switch(num){
+    case 1:
+        console.log('janiero')
+        break;
+    case 2:
+        console.log('fevereiro')
+        break;
+    case 3:
+        console.log('março')
+        break;
+    case 4:
+        console.log('abril')
+        break;
+    case 5:
+        console.log('maio')
+        break;
+    case 6:
+        console.log('junho')
+        break;
+    case 7:
+        console.log('julho')
+        break;
+    case 8:
+        console.log('agosto')
+        break;
+    case 9:
+        console.log('setembro')
+        break;
+    case 10:
+        console.log('outubro')
+        break;
+    case 11:
+        console.log('novembro')
+        break;
+    case 12:
+        console.log('dezembro')
+        break;
+    default:
+        console.log('opção inválida')
+        break;
+}
+
+
+// -->O IMC (Índice de Massa Corporal) é uma unidade de medida internacional usada para calcular se uma pessoa está no seu peso ideal. A fórmula mais genérica de cálculo de IMC é imc = peso / (altura * altura), onde o peso é dado em quilos e a altura em metros. Há uma tabela que define uma classificação para cada faixa de IMC. Segundo esta tabela, pessoas com IMC menor ou igual a 18.5 estão abaixo do peso; pessoas com IMC maior que 18.5 e menor que 25 estão no peso ideal; já as pessoas com IMC maior ou igual a 25 estão acima do peso. Elabore um algoritmo que leia peso e altura de uma pessoa, informe seu IMC e também se ela está abaixo do peso, no peso ideal ou acima do peso.
+
+const prompt = require('prompt-sync')({sigint: true});
+
+var peso = Number(prompt('por favor diga o seu peso para podermos informar o imc: '));
+var altura = Number(prompt('agora precisamos da sua altura em cm: '));
+
+var imc = parseInt((peso / (altura * altura)) * 10000);
+
+switch(imc){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7: 
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+        console.log(`o seu imc é ${imc}, isso significa que você esta abaixo do seu peso ideal`);
+        break;
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+        console.log(`o seu imc é ${imc}, isso significa que você esta dentro do seu peso ideal`);
+        break;    
+    default:
+        console.log(`o seu imc é ${imc}, isso significa que você esta acima do seu peso ideal`);
+        break;
+    }

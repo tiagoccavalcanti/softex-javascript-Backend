@@ -1,0 +1,21 @@
+Laços de Repetição: Enquanto e Faça/Enquanto
+Elabore um algoritmo que escreva todos os números inteiros de 1 a 100.
+Elabore um algoritmo que escreva apenas os números pares de 1 a 100.
+Elabore um algoritmo que escreva apenas os números ímpares de 1 a 100.
+Elabore um algoritmo que escreva todos os números inteiros de 200 a 400.
+Elabore um algoritmo que escreva apenas os números pares de 300 a 600.
+
+Laços de Repetição: Para
+
+    Elabore um algoritmo que escreva todos os números inteiros de 1 a 100.
+    Elabore um algoritmo que escreva apenas os números pares de 1 a 100.
+    Elabore um algoritmo que escreva apenas os números ímpares de 1 a 100.
+    Elabore um algoritmo que escreva todos os números inteiros de 200 a 400.
+    Elabore um algoritmo que escreva apenas os números pares de 300 a 600.
+    Elabore um algoritmo que escreva apenas os números ímpares de 750 a 1500.
+
+
+Desafios com Laços de Repetição
+Você recebeu a tarefa de elaborar um programa que calcule o IMC médio da sua turma. Sabendo que o IMC é dado pela fórmula imc = peso / (altura * altura), elabore um programa que seja capaz de calcular o IMC de quantos alunos for necessário. A cada IMC calculado, o usuário deverá confirmar se deseja continuar. Quando o usuário optar por não continuar mais, exiba a média aritmética dos IMCs calculados.
+Na matemática, o fatorial de um número inteiro a, representado por a!, é o produto de todos os inteiros positivos menores ou iguais a a. Por exemplo, 3! ou 3 fatorial é dado por 3 * 2 * 1, que é igual a 6. Construa um programa que seja capaz de ler um número inteiro e apresentar seu fatorial.
+A Sequência de Fibonacci é uma sequência de números inteiros, começando normalmente por 0 e 1, na qual, cada termo subsequente corresponde à soma dos dois anteriores. Os 10 primeiros termos desta sequência são 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
