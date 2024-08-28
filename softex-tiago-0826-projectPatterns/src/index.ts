@@ -19,13 +19,13 @@ const {addNewPet} = require("./controlers/addNewPet")
     } */
 
 
-addNewPet(caracteristicas:{
+addNewPet({
     nome:"fulano",
     especie:"golden",
     cor:"dourado",
     idade: 10
-},
-tutor:"geovanni",
-id:10,
+};
+tutor:"geovanni";
+id:10;
 historico:"ta mec")
 console.log(pacientes)
