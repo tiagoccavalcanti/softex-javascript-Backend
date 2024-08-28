@@ -1,0 +1,33 @@
+Passos:​
+
+Criar Diretório de Modelos:​
+
+Crie um Diretório: /models ou /database​
+
+Neste diretório crie um arquivo: data.js ou db.js​
+
+Crie um array de objetos com base no seu projeto integrador e exporte-o.​
+
+Criar Diretório de Funções Controladoras:​
+
+Crie um arquivo chamado addNewPet​
+
+Crie um arquivo chamado deletePet​
+
+Crie um arquivo chamado readPets​
+
+Crie um arquivo chamado UpdatePets​
+
+Dentro de cada um desses arquivos, vocês vão criar uma lógica para adicionar, deletar, ler e atualizar o array de objetos de forma modularizada.​
+
+Crie um arquivo index.js ou app.js na raíz do seu projeto​
+
+No arquivo principal, chame essas funções controladoras separadamente​
+
+utilizem o conceito de modularização para exportar e importar o array e as funções​
+
+pesquisem quais são os principais métodos js para manipular arrays em com o objetivo de fazer um CRUD​
+
+Essa atividade pode ser feita tanto em grupo, como individualmente, vocês que escolhem​
+
+A resolução do exercício está no github
