@@ -1,31 +1,37 @@
-import { Paciente } from "./models/data"
-const { pacientes } = require("./models/data")
-const {addNewPet} = require("./controlers/addNewPet")
-
-/* const paciente1:Paciente = {
-        caracteristicas:{
-            nome:"fulano",
-            especie:"golden",
-            cor:"dourado",
-            idade: 10
-        },
-        tutor:"geovanni",
-        id:10,
-        historico:"ta mec"
-        
-           
-
-        
-    } */
-
+import { Paciente } from "./models/data";
+const { pacientes } = require("./models/data");
+const { addNewPet } = require("./controlers/addNewPet");
+const { deletePet } = require("./controlers/deletePet");
+const { readPets } = require("./controlers/readPet");
+const { updatePets } = require("./controlers/updatePets");
 
 addNewPet({
-    nome:"fulano",
-    especie:"golden",
-    cor:"dourado",
-    idade: 10
-};
-tutor:"geovanni";
-id:10;
-historico:"ta mec")
-console.log(pacientes)
+    tutor:"geovanni",
+    id:10,
+    historico:"ta mec",
+    caracteristicas:{
+        nome:"fulano",
+        especie:"golden",
+        cor:"dourado",
+        idade: 10
+    }
+})
+
+
+addNewPet({    
+    tutor:"tiago",
+    id:10,
+    historico:"TA MEC",
+    caracteristicas:{
+        nome:"BOB",
+        especie:"GOLDEN",
+        cor:"dourado",
+        idade: 20,
+    }
+})
+
+
+/* readPets("fulano");
+updatePets("fulano", "historico", "ta ruim pai")
+
+readPets("fulano") */
