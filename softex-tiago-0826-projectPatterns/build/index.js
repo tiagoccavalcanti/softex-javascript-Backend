@@ -18,7 +18,7 @@ addNewPet({
 });
 addNewPet({
     tutor: "tiago",
-    id: 10,
+    id: 11,
     historico: "TA MEC",
     caracteristicas: {
         nome: "BOB",
@@ -27,3 +27,15 @@ addNewPet({
         idade: 20,
     }
 });
+addNewPet({
+    tutor: "tiago",
+    id: 11,
+    historico: "TA MEC",
+    caracteristicas: {
+        nome: "BOB",
+        especie: "GOLDEN",
+        cor: "dourado",
+        idade: 20,
+    }
+});
+console.log(pacientes);
