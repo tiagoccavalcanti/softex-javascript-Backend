@@ -39,3 +39,7 @@ addNewPet({
     }
 });
 console.log(pacientes);
+
+updatePets("BOB", "historico", "mano, nao vai dar nao")
+
+console.log(pacientes)

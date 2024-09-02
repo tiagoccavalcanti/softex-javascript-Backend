@@ -1,9 +1,13 @@
-import { Paciente } from "./models/data";
+import { Paciente } from "./models/pacientes";
+import { Veterinario } from "./models/veterinarios";
+import { Endereco } from "./models/veterinarios";
 const { pacientes } = require("./models/data");
-const { addNewPet } = require("./controlers/addNewPet");
-const { deletePet } = require("./controlers/deletePet");
-const { readPets } = require("./controlers/readPet");
-const { updatePets } = require("./controlers/updatePets");
+const { addNewPet } = require("./controlers/petControlers/addNewPet");
+const { deletePet } = require("./controlers/petControlers/deletePet");
+const { readPets } = require("./controlers/petControlers/readPet");
+const { updatePets } = require("./controlers/petControlers/updatePets");
+const { addVet } = require("./controlers/vetControlers/addVet");
+
 
 addNewPet({
     tutor:"geovanni",
@@ -48,4 +52,6 @@ addNewPet({
     }
 })
 
+
 console.log(pacientes)
+
