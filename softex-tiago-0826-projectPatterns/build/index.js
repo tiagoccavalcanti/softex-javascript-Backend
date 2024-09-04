@@ -1,10 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { pacientes } = require("./models/data");
-const { addNewPet } = require("./controlers/addNewPet");
-const { deletePet } = require("./controlers/deletePet");
-const { readPets } = require("./controlers/readPet");
-const { updatePets } = require("./controlers/updatePets");
+const { pacientes } = require("./models/pacientes");
+const { addNewPet } = require("./controlers/petControlers/addNewPet");
+const { deletePet } = require("./controlers/petControlers/deletePet");
+const { readPets } = require("./controlers/petControlers/readPet");
+const { updatePets } = require("./controlers/petControlers/updatePets");
+const { addVet } = require("./controlers/vetControlers/addVet");
 addNewPet({
     tutor: "geovanni",
     id: 10,
@@ -39,7 +40,3 @@ addNewPet({
     }
 });
 console.log(pacientes);
-
-updatePets("BOB", "historico", "mano, nao vai dar nao")
-
-console.log(pacientes)

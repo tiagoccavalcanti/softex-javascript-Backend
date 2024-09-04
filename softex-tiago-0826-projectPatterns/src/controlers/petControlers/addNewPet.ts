@@ -1,4 +1,4 @@
-const {pacientes} = require("../models/data")
+const {pacientes} = require("../.././models/pacientes")
 import {Paciente} from "../../models/pacientes"
 
 function addNewPet(adicionando:Paciente):void{

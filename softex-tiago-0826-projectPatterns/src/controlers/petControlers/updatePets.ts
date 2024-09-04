@@ -1,5 +1,5 @@
 import { Paciente } from "../../models/pacientes";
-const { pacientes } = require("../models/data");
+const { pacientes } = require("../.././models/pacientes")
 
 
 function updatePets(petMudar: string | number, caracMudar: string, mudado: string | number) {

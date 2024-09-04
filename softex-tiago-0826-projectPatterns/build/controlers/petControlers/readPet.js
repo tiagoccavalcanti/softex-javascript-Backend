@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { pacientes } = require("../models/data");
+const { pacientes } = require("../.././models/pacientes");
 function readPets(lendo) {
     if (typeof lendo == "string") {
         if (pacientes.findIndex((paciente) => paciente.caracteristicas.nome == lendo) == -1) {
