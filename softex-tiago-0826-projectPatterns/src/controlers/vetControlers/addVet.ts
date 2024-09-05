@@ -4,9 +4,9 @@ const { vets } = require("../../models/veterinarios")
 
 function addVet(newVet:Veterinario){
     if( vets.findIndex((vet:Veterinario)=>vet.crmv == newVet.crmv) == -1){
-        console.log("veterinario já cadastrado")
+        return vets.push(newVet);
     }else{
-        vets.push(newVet);
+        return console.log("veterinario já cadastrado")
     }
 }
 

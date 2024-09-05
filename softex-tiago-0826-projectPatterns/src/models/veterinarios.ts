@@ -8,14 +8,14 @@ export interface Endereco {
 
 export interface Veterinario {
     cpf:string;
-    crmv:string;
+    crmv:number;
     especialidade:string;
     infoPessoal: {
-        endereco:Endereco, 
         nome:string,
+        endereco:Endereco,
         contato:{
             fone:number,
-            email:number,
+            email:string,
         }
     }
 }

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { pacientes } = require("../models/data");
+const { pacientes } = require("../../models/pacientes");
 function updatePets(petMudar, caracMudar, mudado) {
     if (typeof petMudar == "string") {
         if (pacientes.findIndex((paciente) => paciente.caracteristicas.nome == petMudar) == -1) {
@@ -30,7 +30,6 @@ function updatePets(petMudar, caracMudar, mudado) {
             return console.log("Id não cadastrado");
         }
         else {
-            let paciente = pacientes.filter((paciente) => paciente.id == petMudar);
             switch (caracMudar) {
                 case "nome":
                     return pacientes[pacientes.findIndex((paciente) => paciente.id == petMudar)].caracteristicas.nome = mudado;

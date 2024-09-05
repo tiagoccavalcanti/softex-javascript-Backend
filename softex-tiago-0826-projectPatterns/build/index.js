@@ -1,10 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { pacientes } = require("./models/data");
-const { addNewPet } = require("./controlers/addNewPet");
-const { deletePet } = require("./controlers/deletePet");
-const { readPets } = require("./controlers/readPet");
-const { updatePets } = require("./controlers/updatePets");
+const { vets } = require("./models/veterinarios");
+const { pacientes } = require("./models/pacientes");
+const { addNewPet } = require("./controlers/petControlers/addNewPet");
+const { deletePet } = require("./controlers/petControlers/deletePet");
+const { readPets } = require("./controlers/petControlers/readPet");
+const { updatePets } = require("./controlers/petControlers/updatePets");
+const { addVet } = require("./controlers/vetControlers/addVet");
+const { deleteVet } = require("./controlers/vetControlers/deleteVet");
+const { readVet } = require("./controlers/vetControlers/readVet");
+const { updateVet } = require("./controlers/vetControlers/updateVet");
 addNewPet({
     tutor: "geovanni",
     id: 10,
@@ -27,19 +32,43 @@ addNewPet({
         idade: 20,
     }
 });
-addNewPet({
-    tutor: "tiago",
-    id: 11,
-    historico: "TA MEC",
-    caracteristicas: {
-        nome: "BOB",
-        especie: "GOLDEN",
-        cor: "dourado",
-        idade: 20,
+addVet({
+    cpf: 12345678,
+    crmv: 1,
+    especialidade: "vet",
+    infoPessoal: {
+        nome: "pablo",
+        endereco: {
+            cidade: "rua nova",
+            bairro: "curado",
+            cep: "54-270060",
+            rua: "das flores",
+            numero: 0
+        },
+        contato: {
+            fone: 6546353,
+            email: "tiago123.cavalcanti@gmail.com"
+        }
     }
 });
-console.log(pacientes);
-
-updatePets("BOB", "historico", "mano, nao vai dar nao")
-
-console.log(pacientes)
+addVet({
+    cpf: 12345678,
+    crmv: 55,
+    especialidade: "vet",
+    infoPessoal: {
+        nome: "mario",
+        endereco: {
+            cidade: "rua nova",
+            bairro: "curado",
+            cep: "54-270060",
+            rua: "das flores",
+            numero: 0
+        },
+        contato: {
+            fone: 6546353,
+            email: "tiago123.cavalcanti@gmail.com"
+        }
+    }
+});
+readVet("mario");
+console.log(vets);

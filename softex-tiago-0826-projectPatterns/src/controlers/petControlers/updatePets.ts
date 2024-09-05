@@ -1,5 +1,5 @@
 import { Paciente } from "../../models/pacientes";
-const { pacientes } = require("../models/data");
+const { pacientes } = require("../../models/pacientes");
 
 
 function updatePets(petMudar: string | number, caracMudar: string, mudado: string | number) {
@@ -31,7 +31,6 @@ function updatePets(petMudar: string | number, caracMudar: string, mudado: strin
         if (pacientes.findIndex((paciente: Paciente) => paciente.id == petMudar) == -1) {
             return console.log("Id não cadastrado");
         } else {
-            let paciente: Paciente = pacientes.filter((paciente: Paciente) => paciente.id == petMudar)
             switch (caracMudar) {
                 case "nome":
                     return pacientes[pacientes.findIndex((paciente: Paciente) => paciente.id == petMudar)].caracteristicas.nome = mudado;
