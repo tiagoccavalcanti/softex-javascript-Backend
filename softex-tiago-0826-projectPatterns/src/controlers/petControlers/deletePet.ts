@@ -1,4 +1,4 @@
-const {pacientes} = require("../.././models/pacientes")
+const {pacientes} = require("../models/data");
 import {Paciente} from "../../models/pacientes";
 
 function deletePet(deletando:string|number){

@@ -1,5 +1,5 @@
 import { Paciente } from "../../models/pacientes";
-const { pacientes } = require("../.././models/pacientes")
+const { pacientes } = require ("../models/data");
 
 function readPets(lendo:string|number){
     if(typeof lendo == "string"){
