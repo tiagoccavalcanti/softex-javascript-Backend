@@ -1,5 +1,6 @@
-const { clients } = require("./generic_models");
-const conection = require("../database/conection")
+const {clients} = require("../generic_models");
+const {conection} = require("../../database/conection")
+
 
 function hellowolrd (req,res){
     res.send("helloWorld");
