@@ -1,4 +1,4 @@
-const {clients} = require("../generic_models");
+const {clients} = require("../models/generic_models");
 const {conection} = require("../../database/conection")
 
 
@@ -15,25 +15,38 @@ function showClients (req,res){
 }
 
 function showClientById(req, res){
-    res.send(clients[req.params.id-1])
+    const sql = `SELECT * FROM clients WHERE id=${req.params.id}`
+    conection.query(sql, (err, result) => {
+        if(err) throw err;
+        res.send(result);
+    });
+    
 }
 
 function post (req,res){
     const { name } = req.body;
-    const id = clients.length + 1
-    clients.push({name, id});
-    res.send("client added succefully");
+    const sql = `INSERT INTO clients (name) VALUES ('${name}')`;
+    conection.query(sql, (err, result)=>{
+        if (err) throw err;
+        res.send("client added succefully");
+    })
 }
  
 function update (req,res){
     const { name } = req.body
-    clients[req.params.id-1].name = name
-    res.send("client updated")
+    const sql = `UPDATE CLIENTS SET name='${name}' WHERE id=${req.params.id}`
+    conection.query(sql, (err, result)=>{
+        if(err) throw err;
+        res.send("client updated")
+    })
 }
 
 function deletar (req,res){
-    clients.splice(req.params.id-1, 1);
-    res.send("client deleted")
+    const sql = `DELETE FROM clients WHERE id=${req.params.id}`
+    conection.query(sql, (err, result)=>{
+        if(err) throw err;
+        res.send("client deleted")
+    })
 }
 
 module.exports = {
